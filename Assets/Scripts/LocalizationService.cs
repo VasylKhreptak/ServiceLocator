@@ -1,6 +1,7 @@
-public class LocalizationService : BaseService
+namespace Plugins.ServiceLocator
 {
-    public LocalizationService(string name) : base(name)
+    public class LocalizationService : BaseService
     {
+        public LocalizationService(string name) : base(name) { }
     }
 }

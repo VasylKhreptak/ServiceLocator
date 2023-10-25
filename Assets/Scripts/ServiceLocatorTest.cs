@@ -1,3 +1,4 @@
+using Plugins.ServiceLocator;
 using UnityEngine;
 
 public class ServiceLocatorTest : MonoBehaviour
@@ -13,7 +14,7 @@ public class ServiceLocatorTest : MonoBehaviour
     {
         _serviceLocator.Register(new LocalizationService("Localization Service"));
         _serviceLocator.Register(new PurchaseService("Purchase Service"));
-        
+
         Debug.Log(_serviceLocator.Get<LocalizationService>() == null);
         Debug.Log(_serviceLocator.Get<PurchaseService>() == null);
     }
